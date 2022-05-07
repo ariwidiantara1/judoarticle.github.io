@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+      box-sizing: border-box;
+}
+body {
+      font-family: 'Quicksand', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(../background-body.jpg);  
+}
+html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 75px;
+}
+h2, h3 {
+      color:rgb(34, 34, 255);
+}
+main {
+      overflow: auto;
+      width: 100%;
+}
+
+.jumbotron {
+      background-image: url("../background_ari.jpg");
+      background-position: right; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+      text-align: center;
+      padding: 198px 100px;
+      font-size: 18px;
+      color: white;
+      font-weight: bold;
+}
+picture img {
+      max-width: 100px;
+      padding: 20px 20px 0px 20px;
+}
+picture img#left {
+      position: absolute;
+      left: 40px;
+      top: 35px;
+}
+picture img#right {
+      position: absolute;
+      right: 40px;
+      top: 35px;
+}
+.card {
+      box-shadow: 0 4px 8px 0 rgb(87, 87, 87);
+      padding: 20px;
+      margin:10px 10px 10px 50px;
+      background-color: white;
+      border-radius: 0 10px 0 10px;
+}
+
+
+.menu {
+      font-family: tahoma;
+      font-size: 18px;
+      background: black;
+      height: 70px;
+      width: 100%;
+      font-weight: bold;
+      border-radius: 0%;
+      position: sticky;
+      top: 0;
+}
+label {
+      float: left;
+      padding: 5px;
+      margin: 10px;
+      color: white;
+      font-size: 20pt;
+      font-family: 'Tapestry', sans-serif;
+}
+.menu ul {
+      display: block;
+      margin: 0;
+      padding: 5px;
+      background:none;
+      float: right;
+}
+.menu ul li {
+      list-style: none;
+      display: inline-block;
+}
+.menu ul li a {
+      text-decoration: none;
+      color: #ddd;
+      display: block;
+      padding: 20px;
+}
+.menu ul li a:hover {
+      display: block;
+      background-color: #222;
+      color: aqua;
+      border-radius: 5px;
+}
+.menu ul li .dropdown {
+      display: none;
+}
+.menu ul li:hover .dropdown {
+      display: block;
+      background: black;
+      position: absolute;
+      padding: 10px;
+}
+.menu ul li:hover .dropdown li {
+      display: block;
+}
+.menu ul li:hover .dropdown li a:hover {
+      color: aqua;
+}
+.list li {
+      line-height: 2em;
+}
+
+#strong {
+      font-weight: bold;
+}
+#italic {
+      font-style: italic;
+}
+
+.card #pejudo {
+      max-width: 200px;
+}
+.card #pencipta {
+      max-width: 150px;
+}
+.content {
+      float: left;
+      width: 70%;
+}
+.profile {
+      float: right;
+      width: 30%;
+      padding: 10px 20px 20px 0;
+}
+.profile h2 {
+      text-align: center;
+}
+.profile p, 
+.profile figcaption {
+      text-align: center;
+}
+.footer {
+      text-align: center;
+      background-image: url("../background_ari.jpg");
+      background-position: 100%;
+      background-color: #525252;
+      font-weight: bold;
+      padding: 10px;
+      margin-top: 40px;
+      color: white;
+}
+
+@media screen and (max-width:1000px) {
+      .content,
+      .profile {
+            padding: 0;
+            width: 100%;
+      }
+      .jumbotron {
+            font-size: xx-small;
+            padding: 20px;
+      }
+      .card {
+            margin: 10px;
+      }
+      .menu ul {
+            background-color: black;
+            width: 100%;
+      }
+      .menu li {
+            width: 100%;
+      }
+      .menu {
+            position:static;
+            font-size: 13px;
+      }
+      label {
+            font-size: 14px;
+      }
+      .menu img {
+            display: none;
+      }
+      picture img#left {
+            position: absolute;
+            left: 20px;
+            top: 0px;
+      }
+      picture img#right {
+            position: absolute;
+            right: 20px;
+            top: 0px;
+      }
+      picture img {
+            width: 70px;
+      }
+}
+
+header {
+      display: inline;
+}
+.menu img {
+      object-fit: cover;
+      object-position: center;
+      max-width: 30px;
+      margin: 0 20px;
+}
+.profile .card table th {
+      padding: 5px;
+      text-align: left;
+}
+.content .card img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      object-position: center;
+}
+
+
+
+
+
+
+
+
+
